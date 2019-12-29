@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03316F8C23B8944B0000F9F0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03316F8B23B8944B0000F9F0 /* MainView.swift */; };
+		03316F8E23B89D1A0000F9F0 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03316F8D23B89D1A0000F9F0 /* DrawingView.swift */; };
+		03316F9023B89E2C0000F9F0 /* UIDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03316F8F23B89E2C0000F9F0 /* UIDrawingView.swift */; };
+		03D70B7323B8349C00CA9BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D70B7223B8349C00CA9BD8 /* AppDelegate.swift */; };
+		03D70B7523B8349C00CA9BD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D70B7423B8349C00CA9BD8 /* SceneDelegate.swift */; };
+		03D70B7723B8349C00CA9BD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D70B7623B8349C00CA9BD8 /* ContentView.swift */; };
+		03D70B7923B8349E00CA9BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D70B7823B8349E00CA9BD8 /* Assets.xcassets */; };
+		03D70B7C23B8349E00CA9BD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D70B7B23B8349E00CA9BD8 /* Preview Assets.xcassets */; };
+		03D70B7F23B8349E00CA9BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D70B7D23B8349E00CA9BD8 /* LaunchScreen.storyboard */; };
+		03D70B8923B8379C00CA9BD8 /* WolfPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 03D70B8823B8379C00CA9BD8 /* WolfPrint */; };
+		03D70B8B23B8390E00CA9BD8 /* PageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D70B8A23B8390E00CA9BD8 /* PageRenderer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03316F8B23B8944B0000F9F0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		03316F8D23B89D1A0000F9F0 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		03316F8F23B89E2C0000F9F0 /* UIDrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDrawingView.swift; sourceTree = "<group>"; };
+		03D70B6F23B8349C00CA9BD8 /* WolfPrintDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolfPrintDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D70B7223B8349C00CA9BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03D70B7423B8349C00CA9BD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		03D70B7623B8349C00CA9BD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		03D70B7823B8349E00CA9BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03D70B7B23B8349E00CA9BD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03D70B7E23B8349E00CA9BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03D70B8023B8349E00CA9BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03D70B8A23B8390E00CA9BD8 /* PageRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRenderer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03D70B6C23B8349C00CA9BD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D70B8923B8379C00CA9BD8 /* WolfPrint in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03D70B6623B8349C00CA9BD8 = {
+			isa = PBXGroup;
+			children = (
+				03D70B7123B8349C00CA9BD8 /* WolfPrintDemo */,
+				03D70B7023B8349C00CA9BD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03D70B7023B8349C00CA9BD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03D70B6F23B8349C00CA9BD8 /* WolfPrintDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03D70B7123B8349C00CA9BD8 /* WolfPrintDemo */ = {
+			isa = PBXGroup;
+			children = (
+				03D70B7223B8349C00CA9BD8 /* AppDelegate.swift */,
+				03D70B7423B8349C00CA9BD8 /* SceneDelegate.swift */,
+				03D70B7623B8349C00CA9BD8 /* ContentView.swift */,
+				03D70B8A23B8390E00CA9BD8 /* PageRenderer.swift */,
+				03316F8B23B8944B0000F9F0 /* MainView.swift */,
+				03316F8D23B89D1A0000F9F0 /* DrawingView.swift */,
+				03316F8F23B89E2C0000F9F0 /* UIDrawingView.swift */,
+				03D70B7823B8349E00CA9BD8 /* Assets.xcassets */,
+				03D70B7D23B8349E00CA9BD8 /* LaunchScreen.storyboard */,
+				03D70B8023B8349E00CA9BD8 /* Info.plist */,
+				03D70B7A23B8349E00CA9BD8 /* Preview Content */,
+			);
+			path = WolfPrintDemo;
+			sourceTree = "<group>";
+		};
+		03D70B7A23B8349E00CA9BD8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03D70B7B23B8349E00CA9BD8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03D70B6E23B8349C00CA9BD8 /* WolfPrintDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03D70B8323B8349E00CA9BD8 /* Build configuration list for PBXNativeTarget "WolfPrintDemo" */;
+			buildPhases = (
+				03D70B6B23B8349C00CA9BD8 /* Sources */,
+				03D70B6C23B8349C00CA9BD8 /* Frameworks */,
+				03D70B6D23B8349C00CA9BD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WolfPrintDemo;
+			packageProductDependencies = (
+				03D70B8823B8379C00CA9BD8 /* WolfPrint */,
+			);
+			productName = WolfPrintDemo;
+			productReference = 03D70B6F23B8349C00CA9BD8 /* WolfPrintDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03D70B6723B8349C00CA9BD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Arciem LLC";
+				TargetAttributes = {
+					03D70B6E23B8349C00CA9BD8 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 03D70B6A23B8349C00CA9BD8 /* Build configuration list for PBXProject "WolfPrintDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03D70B6623B8349C00CA9BD8;
+			packageReferences = (
+				03D70B8723B8379C00CA9BD8 /* XCRemoteSwiftPackageReference "WolfPrint" */,
+			);
+			productRefGroup = 03D70B7023B8349C00CA9BD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03D70B6E23B8349C00CA9BD8 /* WolfPrintDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03D70B6D23B8349C00CA9BD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D70B7F23B8349E00CA9BD8 /* LaunchScreen.storyboard in Resources */,
+				03D70B7C23B8349E00CA9BD8 /* Preview Assets.xcassets in Resources */,
+				03D70B7923B8349E00CA9BD8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03D70B6B23B8349C00CA9BD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03316F9023B89E2C0000F9F0 /* UIDrawingView.swift in Sources */,
+				03D70B7323B8349C00CA9BD8 /* AppDelegate.swift in Sources */,
+				03D70B8B23B8390E00CA9BD8 /* PageRenderer.swift in Sources */,
+				03D70B7523B8349C00CA9BD8 /* SceneDelegate.swift in Sources */,
+				03316F8C23B8944B0000F9F0 /* MainView.swift in Sources */,
+				03316F8E23B89D1A0000F9F0 /* DrawingView.swift in Sources */,
+				03D70B7723B8349C00CA9BD8 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03D70B7D23B8349E00CA9BD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03D70B7E23B8349E00CA9BD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03D70B8123B8349E00CA9BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03D70B8223B8349E00CA9BD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03D70B8423B8349E00CA9BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WolfPrintDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 92TUA8H52D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WolfPrintDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arciem.WolfPrintDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03D70B8523B8349E00CA9BD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WolfPrintDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 92TUA8H52D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WolfPrintDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arciem.WolfPrintDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03D70B6A23B8349C00CA9BD8 /* Build configuration list for PBXProject "WolfPrintDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D70B8123B8349E00CA9BD8 /* Debug */,
+				03D70B8223B8349E00CA9BD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03D70B8323B8349E00CA9BD8 /* Build configuration list for PBXNativeTarget "WolfPrintDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D70B8423B8349E00CA9BD8 /* Debug */,
+				03D70B8523B8349E00CA9BD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03D70B8723B8379C00CA9BD8 /* XCRemoteSwiftPackageReference "WolfPrint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wolfmcnally/WolfPrint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03D70B8823B8379C00CA9BD8 /* WolfPrint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03D70B8723B8379C00CA9BD8 /* XCRemoteSwiftPackageReference "WolfPrint" */;
+			productName = WolfPrint;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 03D70B6723B8349C00CA9BD8 /* Project object */;
+}

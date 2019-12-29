@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "WolfPrint",
+        "repositoryURL": "https://github.com/wolfmcnally/WolfPrint.git",
+        "state": {
+          "branch": null,
+          "revision": "449cfd53a96ed622ab835b886886c0a4fe90256c",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
