@@ -21,7 +21,22 @@ class UIDrawingView: UIView {
     }
 
     override func draw(_ rect: CGRect) {
-        let hostingContext = HostingContext(rootView: MainView(), context: UIGraphicsGetCurrentContext()!, displaySize: rect.size, debugViews: true)
+        let context = UIGraphicsGetCurrentContext()!
+        drawCrosshair(rect: rect, context: context)
+        let hostingContext = HostingContext(rootView: MainView(), context: context, displaySize: rect.size, debugViews: true)
         hostingContext.draw()
+    }
+
+    private func drawCrosshair(rect: CGRect, context: CGContext) {
+        context.saveGState()
+        context.setStrokeColor(UIColor.lightGray.cgColor)
+        let path = CGMutablePath()
+        path.move(to: CGPoint(x: rect.midX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.midX, y: rect.maxY))
+        path.move(to: CGPoint(x: rect.minX, y: rect.midY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.midY))
+        context.addPath(path)
+        context.strokePath()
+        context.restoreGState()
     }
 }

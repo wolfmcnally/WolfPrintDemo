@@ -11,10 +11,21 @@ import WolfPrint
 
 public struct MainView: View {
     public var body: some View {
-//        VStack {
-//            Text("Hello, world!")
-//                //.background(Color.red)
-//        }
+        HStack {
+            Text("Hello")
+                .background(Color.blue)
+                .padding()
+                .background(Color.red)
+                .padding()
+                .background(Color.green)
+            Text("Swift")
+                .background(Color.blue)
+                .padding()
+                .background(Color.red)
+                .padding()
+                .background(Color.green)
+                .font(.title)
+        }
 //        VStack {
 //            VStack {
 //                HStack {
@@ -37,17 +48,17 @@ public struct MainView: View {
 //                    .padding(12)
 //            }
 
-            VStack {
-                Text("Written")
-                    //.font(.title)
-                Text("in")
-                    //.font(.title)
-                Text("Swift")
-                    .font(Font.system(.title).bold())
-                    .foregroundColor(Color.red)
-            }
-            .font(.footnote)
-            .foregroundColor(Color.blue)
+//            VStack {
+//                Text("Written")
+//                    //.font(.title)
+//                Text("in")
+//                    //.font(.title)
+//                Text("Swift")
+//                    .font(Font.system(.title).bold())
+//                    .foregroundColor(Color.red)
+//            }
+//            .font(.footnote)
+//            .foregroundColor(Color.blue)
 
             //.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
 
