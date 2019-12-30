@@ -23,17 +23,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "12CCB7AF-5635-493F-B32F-DBD4F7D32CE4"
+            uuid = "92B29C72-F28C-419D-8954-E71DF8557E40"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../WolfPrint/Sources/WolfPrint/Renderer/ViewExtensions/TextExtensions.swift"
+            filePath = "../WolfPrint/Sources/WolfPrint/Renderer/Drawables/ModifiedContentDrawable.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "osFont"
-            landmarkType = "24">
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "wantedWidthForProposal(_:otherLength:node:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED4FD8B5-29F4-425A-98D6-6473D4A24ABC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../WolfPrint/Sources/WolfPrint/Renderer/ViewNode.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
+            landmarkName = "layoutVStackedNodes(givenWidth:givenHeight:alignment:spacing:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4E49B89-9EFD-4330-85EE-1EB123FDDC6D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../WolfPrint/Sources/WolfPrint/Renderer/ViewNode.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "calculateChildSizes(givenWidth:givenHeight:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A300131-A97C-4181-BF52-3C43A5EA090F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../WolfPrint/Sources/WolfPrint/Renderer/ViewNode.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "256"
+            endingLineNumber = "256"
+            landmarkName = "layoutVStackedNodes(givenWidth:givenHeight:alignment:spacing:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
