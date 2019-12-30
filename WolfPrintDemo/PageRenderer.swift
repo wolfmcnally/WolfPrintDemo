@@ -13,7 +13,7 @@ class PageRenderer: UIPrintPageRenderer {
     override var numberOfPages: Int { 1 }
 
     override func drawContentForPage(at pageIndex: Int, in contentRect: CGRect) {
-        let hostingContext = HostingContext(rootView: MainView(), context: UIGraphicsGetCurrentContext()!, displaySize: paperRect.size, debugViews: true)
+        let hostingContext = HostingContext(rootView: MainView(), context: UIGraphicsGetCurrentContext()!, displaySize: paperRect.size, debugViews: false)
         hostingContext.draw()
     }
 }

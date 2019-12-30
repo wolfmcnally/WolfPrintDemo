@@ -12,6 +12,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             DrawingView()
+            Spacer().frame(height: 10)
             Button(action: {
                 self.toPrint()
             }, label: {
@@ -19,8 +20,11 @@ struct ContentView: View {
                     Text("Print")
                     Image(systemName: "printer")
                 }
+                .font(Font.subheadline.bold())
             })
+            Spacer().frame(height: 20)
         }
+        .accentColor(Color.yellow)
     }
 
     private func toPrint() {
