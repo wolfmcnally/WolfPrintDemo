@@ -22,8 +22,8 @@ class UIDrawingView: UIView {
 
     override func draw(_ rect: CGRect) {
         let context = UIGraphicsGetCurrentContext()!
-        drawCrosshair(rect: rect, context: context)
-        let hostingContext = HostingContext(rootView: MainView(), context: context, displaySize: rect.size, debugViews: true)
+        //drawCrosshair(rect: rect, context: context)
+        let hostingContext = HostingContext(rootView: MainView(), context: context, displaySize: rect.size, debugViews: false)
         hostingContext.draw()
     }
 

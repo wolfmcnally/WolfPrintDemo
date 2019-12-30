@@ -17,8 +17,8 @@ struct ContentView: View {
                 self.toPrint()
             }, label: {
                 HStack {
-                    Text("Print")
                     Image(systemName: "printer")
+                    Text("Print")
                 }
                 .font(Font.subheadline.bold())
             })

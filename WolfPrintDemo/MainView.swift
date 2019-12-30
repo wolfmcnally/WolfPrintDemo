@@ -11,16 +11,26 @@ import WolfPrint
 
 public struct MainView: View {
     public var body: some View {
-//        VStack {
-//            testText
-//            testTextWithPadding
+        VStack {
+            testText
+            testTextWithPadding
+            vStackWithBackground
+            Divider()
 //            testCircle
 //            testCircleWithPadding
-//            body3
-//            body2
-        body4
-//        colorBars
-//        }
+            vStackAndHStackinVStack
+            vStacksInVStack
+            lotsOfPadding
+//            colorBars
+        }
+        .padding()
+    }
+
+    public var vStackWithBackground: some View {
+        VStack {
+            Text("Swift")
+        }
+        .background(Color.blue)
     }
 
     var colorBars: some View {
@@ -60,11 +70,13 @@ public struct MainView: View {
 
     public var testText: some View {
         Text("Hello")
+            .background(Color.red)
     }
 
     public var testTextWithPadding: some View {
         Text("Hello")
             .padding()
+            .background(Color.green)
     }
 
     public var testCircle: some View {
@@ -76,37 +88,53 @@ public struct MainView: View {
             .padding()
     }
 
-    public var body3: some View {
+    public var vStackAndHStackinVStack: some View {
         VStack {
-            VStack {
+            VStack(spacing: 0) {
                 Text("Written")
+                    .bold()
                 Text("in")
+                    .italic()
                 Text("Swift")
+                    .font(.custom("Zapfino", size: 28))
             }
+            .padding()
+            .background(Color.blue)
             HStack {
                 Spacer()
                 Text("Hello")
             }
         }
+        .background(Color.yellow)
     }
 
-    public var body4: some View {
+    public var vStacksInVStack: some View {
         VStack {
-            VStack {
+            VStack(alignment: .leading) {
                 Text("Swift")
-//                Circle()
+                    .bold()
+                    .foregroundColor(.blue)
+                HStack {
+                    Circle()
+                    Divider()
+                    Rectangle()
+                    Divider()
+                    Circle()
+                }
+                .foregroundColor(.red)
             }
-//            .background(Color.red)
-//            .font(.title)
-            VStack {
-//                Text("Swift")
+            .font(.title)
+            VStack(alignment: .trailing) {
+                Text("Swift")
                 Circle()
+                    .foregroundColor(.green)
             }
-//            .background(Color.blue)
+            .background(Color.blue)
         }
+        .background(Color.orange)
     }
 
-    public var body2: some View {
+    public var lotsOfPadding: some View {
         VStack {
             VStack(spacing: 10) {
                 Text("Written")
@@ -114,7 +142,7 @@ public struct MainView: View {
                 Text("Swift")
                     .fontWeight(.black)
             }
-//            .font(.title)
+            Divider()
             HStack(spacing: 10) {
                 Circle()
                     .background(Color.red)
