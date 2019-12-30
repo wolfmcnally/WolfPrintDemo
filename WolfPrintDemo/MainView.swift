@@ -16,6 +16,7 @@ public struct MainView: View {
             testTextWithPadding
             vStackWithBackground
             Divider()
+            lipsum
 //            testCircle
 //            testCircleWithPadding
             vStackAndHStackinVStack
@@ -24,6 +25,16 @@ public struct MainView: View {
 //            colorBars
         }
         .padding()
+    }
+
+    public var lipsum: some View {
+        HStack {
+            Image(uiImage: UIImage(systemName: "person")!)
+            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                .font(.footnote)
+        }
+        .padding()
+        .background(Color.yellow)
     }
 
     public var vStackWithBackground: some View {
