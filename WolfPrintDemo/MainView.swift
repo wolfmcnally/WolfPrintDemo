@@ -10,11 +10,49 @@ import UIKit
 import WolfPrint
 
 public struct MainView: View {
+    var show1 = true
+    var show2 = false
+    var isOn = true
+
     public var body: some View {
+        demo
+    }
+
+    public var conditional: some View {
+        HStack {
+            if show1 {
+                Text("1")
+            }
+            if show2 {
+                Text("2")
+            }
+            if isOn {
+                Text("It's")
+                Text("On")
+            } else {
+                Text("It is")
+                Text("Off")
+            }
+        }
+    }
+
+    public var test1: some View {
         VStack {
-            testText
-            testTextWithPadding
-            vStackWithBackground
+            HStack {
+                Text("AB")
+                    .padding()
+                Text("CD")
+            }
+        }
+    }
+
+    public var demo: some View {
+        VStack {
+            HStack {
+                testText
+                testTextWithPadding
+                vStackWithBackground
+            }
             Divider()
             lipsum
 //            testCircle
